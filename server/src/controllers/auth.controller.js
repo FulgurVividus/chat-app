@@ -118,6 +118,7 @@ export const updateProfile = async (req, res) => {
   }
 };
 
+//# CHECK AUTH
 export const checkAuth = async (req, res) => {
   try {
     res.status(200).json(req.user);
