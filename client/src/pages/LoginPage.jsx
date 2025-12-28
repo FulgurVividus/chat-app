@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useAuthStore } from "../store/useAuthStore";
 import { Link } from "react-router-dom";
 import { EyeOff, Eye, Lock, Mail, MessageSquare, Loader2 } from "lucide-react";
@@ -11,6 +11,10 @@ const LoginPage = () => {
     email: "",
     password: "",
   });
+
+  useEffect(() => {
+    document.title = "Chatty | Login";
+  }, []);
 
   const handleSubmit = async (event) => {
     event.preventDefault();

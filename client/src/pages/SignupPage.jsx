@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useAuthStore } from "../store/useAuthStore";
 import {
   EyeOff,
@@ -21,6 +21,10 @@ const SignupPage = () => {
     email: "",
     password: "",
   });
+
+  useEffect(() => {
+    document.title = "Chatty | Sign Up";
+  }, []);
 
   const validateForm = () => {
     if (!formData.fullName.trim()) return toast.error("Full name is required");
