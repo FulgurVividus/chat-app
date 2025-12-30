@@ -22,8 +22,11 @@ export default defineConfig([
         sourceType: "module",
       },
     },
+    plugins: ["react-hooks"],
     rules: {
       "no-unused-vars": "warn",
+      "react-hooks/rules-of-hooks": "error",
+      "react-hooks/exhaustive-deps": "warn",
     },
   },
 ]);
