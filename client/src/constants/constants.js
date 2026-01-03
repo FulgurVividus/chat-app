@@ -37,3 +37,5 @@ export const PREVIEW_MESSAGES = [
   { id: 1, content: "Hey! How it's going?", isSent: false },
   { id: 2, content: "I'm doing great! Just working hard.", isSent: true },
 ];
+
+export const BASE_BACKEND_URL = "http://localhost:5001";
