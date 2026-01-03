@@ -38,4 +38,5 @@ export const PREVIEW_MESSAGES = [
   { id: 2, content: "I'm doing great! Just working hard.", isSent: true },
 ];
 
-export const BASE_BACKEND_URL = "http://localhost:5001";
+export const BASE_BACKEND_URL =
+  import.meta.env.MODE === "development" ? "http://localhost:5001" : "/";
